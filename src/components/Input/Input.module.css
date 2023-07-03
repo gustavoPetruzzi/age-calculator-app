@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   letter-spacing: 2px;
+  color: var(--smokey-gray);
 }
 .custom-label input {
   margin-top: 0.5rem;
   height: 62px;
   width: 100%;
-  border: 1px solid gainsboro;
+  border: 1px solid var(--light-grey);
   border-radius: 0.5rem;
   font-weight: bolder;
   font-size: 1.5rem;
@@ -15,13 +16,17 @@
   font-weight: bold;
 }
 
+.custom-label input::placeholder {
+
+}
+
 .custom-label input:hover,
 .custom-label input:focus {
-  border-color: purple;
+  border-color: var(--purple);
 }
 
 .custom-label span {
   font-size: 0.625rem;
   font-style: italic;
-  color: red;
+  color: var(--light-red);
 }

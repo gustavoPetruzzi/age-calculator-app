@@ -10,7 +10,7 @@
 .container .separator {
   width: 100%;
   height: 1px;
-  background-color: lightgrey;
+  background-color: var(--light-grey);
 }
 
 .container .button {
@@ -20,7 +20,7 @@
   margin-left: auto;
   border-radius: 50%;
   left: calc(50% - 1.5rem);
-  background-color: black;
+  background-color: var(--off-black);
   background-image: url("/src/assets/images/icon-arrow.svg");
   background-position: center;
   background-size: 2rem;
