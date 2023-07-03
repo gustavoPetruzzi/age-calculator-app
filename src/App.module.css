@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.5rem;
+  
+}
+
+.container {
+  background-color: white;
+  padding: 5rem 1rem;
+}
+
+.input-container {
+  display: flex;
+  gap: 1rem;
+}

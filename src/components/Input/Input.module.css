@@ -1,0 +1,27 @@
+.custom-label {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 2px;
+}
+.custom-label input {
+  margin-top: 0.5rem;
+  height: 62px;
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  outline: none;
+  font-weight: bold;
+}
+
+.custom-label input:hover,
+.custom-label input:focus {
+  border-color: purple;
+}
+
+.custom-label span {
+  font-size: 0.625rem;
+  font-style: italic;
+  color: red;
+}
