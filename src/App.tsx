@@ -11,7 +11,8 @@ const App: Component = () => {
         <div class={styles["input-container"]}>
           <For each={[...inputDates]}>
             {(item) => 
-              <Input 
+              <Input
+                placeholder={item.placeholder}
                 hasError={item.hasError} 
                 errorMessage={item.errorMessage} 
                 onBlur={(value) => updateInput(value, item.type)} 
