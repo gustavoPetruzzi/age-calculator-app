@@ -1,4 +1,4 @@
-import { Component } from 'solid-js';
+import type { Component } from 'solid-js';
 import styles from './Separator.module.css';
 
 const Separator: Component<{isDisabled: boolean}> = (props) => {
