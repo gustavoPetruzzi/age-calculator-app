@@ -6,6 +6,7 @@ export interface InputDate {
   errorMessage: string;
   min: number;
   max: number;
+  placeholder: string;
 }
 
 export enum InputType {

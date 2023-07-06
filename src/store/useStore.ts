@@ -4,6 +4,7 @@ import { InputDate, InputType } from "./InputDate";
 const [inputDates, setInputDates] = createStore<InputDate[]>([
   {
     value: "",
+    placeholder: "DD",
     type: InputType.Date,
     label: "Date",
     hasError: false,
@@ -13,6 +14,7 @@ const [inputDates, setInputDates] = createStore<InputDate[]>([
   },
   {
     value: "",
+    placeholder: "MM",
     type: InputType.Month,
     label: "Month",
     hasError: false,
@@ -22,6 +24,7 @@ const [inputDates, setInputDates] = createStore<InputDate[]>([
   },
   {
     value: "",
+    placeholder: "YYYY",
     type: InputType.Year,
     label: "Year",
     hasError: false,
