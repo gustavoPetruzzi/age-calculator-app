@@ -1,6 +1,10 @@
 import { createStore, produce } from "solid-js/store";
 import { InputDate, InputType } from "./InputDate";
 
+
+const today = new Date();
+const monthsLength = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
 const [inputDates, setInputDates] = createStore<InputDate[]>([
   {
     value: "",
@@ -103,6 +107,38 @@ export const updateInput = (value: string, type: InputType) => {
   const func = updateActions[type];
   if (func) {
     func();
+  }
+}
+
+
+
+export const calculate = (): { years: string, months: string, days: string } => {
+  let date = today.getDate();
+  let month = 1 + today.getMonth();
+  let year = today.getFullYear();
+
+  let inputDate = inputDates.find(input => input.type === InputType.Date);
+  let inputMonth = inputDates.find(input => input.type === InputType.Month);
+  let inputYear = inputDates.find(input => input.type === InputType.Year);
+  
+  if (+inputDate!.value > date) {
+    date = date + monthsLength[month - 1];
+    month = month -1;
+  }
+
+  if (+inputMonth!.value > month) {
+    month = month + 12;
+    year = year - 1;
+  }
+
+  const days = date - +inputDate!.value;
+  const months = month - +inputMonth!.value;
+  const years = year - +inputYear!.value;
+
+  return {
+    years: years.toString(),
+    months: months.toString(),
+    days: days.toString()
   }
 }
 
