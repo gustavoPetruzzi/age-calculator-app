@@ -10,7 +10,7 @@ const Separator: Component<SeparatorProps> = (props) => {
   return (
     <div class={styles.container}>
       <div class={styles.separator}></div>
-      <div class={styles.button} onClick={props.onClick}></div>
+      <button disabled={props.isDisabled} class={styles.button} onClick={props.onClick}></button>
     </div>
   )
 }
