@@ -1,9 +1,11 @@
 import { createStore, produce } from "solid-js/store";
 import { InputDate, InputType } from "./InputDate";
+import { createSignal } from "solid-js";
 
 
 const today = new Date();
 const monthsLength = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+export const [isDisabled, setIsDisabled] = createSignal(true);
 
 const [inputDates, setInputDates] = createStore<InputDate[]>([
   {
@@ -107,10 +109,18 @@ export const updateInput = (value: string, type: InputType) => {
   const func = updateActions[type];
   if (func) {
     func();
+    isButtonDisabled();
   }
 }
 
+const isButtonDisabled = () => {
+  const dateIsValid = !inputDates[0].hasError && inputDates[0].value.length > 0;
+  const monthIsValid = !inputDates[1].hasError && inputDates[1].value.length > 0;
+  const yearIsValid = !inputDates[2].hasError && inputDates[2].value.length > 0;
+  const isValid = dateIsValid && monthIsValid && yearIsValid;
 
+  setIsDisabled(!isValid);
+}
 
 export const calculate = (): { years: string, months: string, days: string } => {
   let date = today.getDate();

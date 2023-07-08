@@ -11,9 +11,9 @@ interface AgeDisplayProps {
 const AgeDisplay: Component<AgeDisplayProps> = (props) => {
   return (
     <>
-      <TimeDisplay value={props.days} type={InputType.Year} />
+      <TimeDisplay value={props.years} type={InputType.Year} />
       <TimeDisplay value={props.months} type={InputType.Month} />
-      <TimeDisplay value={props.years} type={InputType.Date} />
+      <TimeDisplay value={props.days} type={InputType.Date} />
     </>  
   )
 } 
