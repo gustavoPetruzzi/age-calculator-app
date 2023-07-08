@@ -14,7 +14,9 @@
 }
 
 .container .button {
+  cursor: pointer;
   position: absolute;
+  outline: none;
   height: 100%;
   width: 3rem;
   margin-left: auto;
@@ -27,6 +29,10 @@
   background-repeat: no-repeat;
 }
 
-.container .button:hover {
-  /* background-color: ; */
+.container .button:disabled {
+  cursor: not-allowed;
+}
+
+.container .button:hover:not(:disabled) {
+  background-color: var(--purple);
 }
