@@ -16,6 +16,7 @@
 .container .button {
   cursor: pointer;
   position: absolute;
+  border: none;
   outline: none;
   height: 100%;
   width: 3rem;
