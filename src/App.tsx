@@ -26,7 +26,7 @@ const App: Component = () => {
                 placeholder={item.placeholder}
                 hasError={item.hasError} 
                 errorMessage={item.errorMessage} 
-                onBlur={(value) => updateInput(value, item.type)} 
+                onChange={(value) => updateInput(value, item.type)} 
                 label={item.label}
                 min={item.min}
                 max={item.max}
