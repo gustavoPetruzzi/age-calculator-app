@@ -1,4 +1,12 @@
+
 .time-display {
-  font-size: 5rem;
+  /* font-size: clamp(3rem, -0.0705rem + 3vw, 5rem); */
+  font-size: 3rem;
 	font-weight: bolder;
+}
+
+@media (min-width: 1440px) {
+  .time-display {
+    font-size: 5rem;
+  }
 }
