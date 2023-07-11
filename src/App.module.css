@@ -8,7 +8,8 @@
 }
 
 .container {
-  background-color: var(--off-white);
+  background-color: var(--white);
+  border-bottom-right-radius: 25%;
   padding: 5rem 1rem;
 }
 
