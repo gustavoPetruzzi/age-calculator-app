@@ -12,7 +12,7 @@ html,body, #root {
 
 @font-face {
   font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-Regular.ttf') format('ttf');
+  src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -21,7 +21,7 @@ html,body, #root {
 
 @font-face {
   font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-Italic.ttf') format('ttf');
+  src: url('assets/fonts/Poppins-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
   text-rendering: optimizeLegibility;
@@ -30,7 +30,7 @@ html,body, #root {
 
 @font-face {
   font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-Bold.ttf') format('ttf');
+  src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -39,7 +39,7 @@ html,body, #root {
 
 @font-face {
   font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-BoldItalic.ttf') format('ttf');
+  src: url('assets/fonts/Poppins-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
   text-rendering: optimizeLegibility;
@@ -48,7 +48,7 @@ html,body, #root {
 
 @font-face {
   font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-ExtraBold.ttf') format('ttf');
+  src: url('assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
   font-weight: bolder;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -57,7 +57,7 @@ html,body, #root {
 
 @font-face {
   font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-ExtraBoldItalic.ttf') format('ttf');
+  src: url('assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
   font-weight: bolder;
   font-style: italic;
   text-rendering: optimizeLegibility;
